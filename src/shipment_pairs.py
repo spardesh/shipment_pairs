@@ -61,3 +61,19 @@ def collect_pairs(shipments):
         ['IN', 'CA', 12, 5],
     ]
     """
+    pass
+
+
+if __name__ == '__main__':
+
+    # Part 1
+    export_only = remove_intra(SHIPMENTS)
+    print('#' * 80, ' ' * 30 + 'Intra Removed', '#' * 80, sep='\n')
+    print(export_only)
+
+    # Part 2
+    shipment_pairs = collect_pairs(SHIPMENTS)
+    print('\n', '#' * 80, ' ' * 30 + 'Pairs collected', '#' * 80, sep='\n')
+    print(shipment_pairs)
+
+
